@@ -1,0 +1,34 @@
+1.	First of all, install git if you don't have it yet, and create a GitHub account. ( You can refer to the lesson "Install Git and Create GitHub Account" in the prework. Follow the guidelines given there. Additionally, you can use these resources: Install git, Version control with git)
+2.	Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+3.	Clone that repo to your computer.
+$ git clone https://github.com/Mojgunsh/IronMojgun.git
+4.	Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+$ cd IronMojgun
+$ touch about.txt
+5.	Add the file you just created to the git.
+$ git add about.txt
+6.	Commit the changes.
+$ git commit -m "adding txt file"
+7.	Push the changes to the GitHub and check your repository to make sure everything is there.
+$ git push  origin master
+Pair Programming Exercise
+1.	Pair yourself with a classmate. Send the link of your GitHub repository to your pair via Slack. Now each of you should perform the following set of actions:
+2.	Fork your classmate's repository.
+https://github.com/Mojgunsh/IronAlberto.git
+3.	Clone the repository, so that you have it locally and can make changes.
+$ git clone https://github.com/Mojgunsh/IronAlberto.git
+4.	Create a new branch named classmate.
+$ git branch classmate
+$ git push origin classmate
+5.	Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+$ touch mojgun.txt
+$  echo "I enrolled Ironhack's Data Analytics bootcamp because I want to find a job related to this topic" >> mojgun.txt
+6.	Add the changes to the git.
+$ git add mojgun.txt
+7.	Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+$ git commit -m "New txt file"
+$ git push origin master
+8.	Create a pull request to make changes appear in the original repository.
+$ git pull orgin master
+9.	Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
+$ Git merge master classmate
